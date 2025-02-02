@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+        }
+        .home-btn {
+            color: white;
+            background: none;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            position: absolute;
+            top: 13px;
+            right: 19px;
+        }
+
+        .home-btn:hover {
+            background-color: white;
+            color: #4285f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: white;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 8s infinite ease-in-out;
+        }
+
+            .circle:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+            .circle:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            top: 60%;
+            left: 70%;
+            animation-delay: 3s;
+         }
+
+            .circle:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            top: 40%;
+            left: 10%;
+            animation-delay: 5s;
+        }
+
+        @keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <button class="home-btn" onclick="goHome()" >Back to Home</button>
+    <div class="container">
+        <div class="background-shapes">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        <div class="header">
+            <h1>My Services</h1>
+            <p>Offering a range of development and consultation services tailored to your needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Frontend and backend solutions using HTML, CSS, JavaScript, and Python frameworks for responsive and functional websites.</p>
+            </div>
+            <div class="service-card">
+                <h3>Software Development</h3>
+                <p>Custom desktop applications, debugging, and performance optimization using C and C++.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goHome() {
+      window.location.href = 'http://127.0.0.1:5500/PROJECTS/Portfolio/Main%20Page/index.html';
+    }
+    </script>
+</body>
+</html>
