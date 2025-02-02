@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .header {
+      background-color: #4285f4;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .header .home-btn {
+      color: white;
+      background: none;
+      border: 1px solid white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .header .home-btn:hover {
+      background-color: white;
+      color: #4285f4;
+    }
+
+    .contact-container {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      margin: 0 0 10px;
+    }
+
+    .contact-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .form-container {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .form-container form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    form button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #3367d6;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Contact Me</h1>
+    <button class="home-btn" onclick="goHome()" >Back to Home</button>
+  </header>
+
+  <main class="contact-container">
+    <h2 class="contact-title">How Can I Help You?</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <img src="https://img.icons8.com/color/96/phone.png" alt="Phone Icon">
+        <h3>Call Me</h3>
+        <p>+123 456 7890</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://img.icons8.com/color/96/email.png" alt="Email Icon">
+        <h3>Email Me</h3>
+        <p>ayushv2909@gmail.com</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://img.icons8.com/color/96/address.png" alt="Address Icon">
+        <h3>Visit Me</h3>
+        <p>123 Street Name, City, Country</p>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h2>Send Me a Message</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Your Portfolio. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Navigate to home page
+    function goHome() {
+      window.location.href = 'http://127.0.0.1:5500/PROJECTS/Portfolio/Main%20Page/index.html';
+    }
+
+    // Form submission simulation
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Thank you, ${name}! Your message has been sent.\n\nEmail: ${email}\nMessage: ${message}`);
+    });
+  </script>
+</body>
+</html>
