@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../Home slide bar/home.css">
+  <title>Main page</title>
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="left">        
+        Ayush's Portfolio
+      </div>
+
+      <div class="right">
+        <ul>
+          <li><button class="open-btn" onclick="openNav()"><img class="home-icon" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Home_icon_orange.png?20201204223327" alt=""></button></li>
+          <li><a href="http://127.0.0.1:5500/PROJECTS/Portfolio/About%20Page/about.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/PROJECTS/Portfolio/Services/services.html">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="http://127.0.0.1:5500/PROJECTS/Portfolio/Contac%20Me/contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+
+
+
+                                                          <!-- SLIDE BAR -->
+
+  <div id="mySidebar" class="sidebar">
+    <button class="close-btn" onclick="closeNav()"><span id="games">Games</span> ×</button>
+    
+    <div class="sidebar-content">
+        <div class="feature">
+          Snake Game
+        </div>
+        <div class="feature">
+            <a href="#"><span>Tic Tac Toe</span></a>
+        </div>
+        <div class="feature">
+            <a href="#">Sudoku Solver</a>
+        </div>
+        <!-- Add more features here -->
+    </div>
+</div>
+
+
+
+
+  
+  <main>
+    <section class="firstsection">
+
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Ayush</span>
+        <div>
+           and I am a passionate
+        </div>
+        <span id="element"></span>
+        <div class="buttons">
+          <button class="btn" id="resumebtn">My Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+
+
+      <div class="rightsection">
+        <img src="../IMG_20250123_025359.jpg" id="myimage" alt="Image">
+      </div>
+    </section>
+
+
+<hr>
+
+    <section class="secondsection">
+      <span class="text-gray">what I have done so far</span>
+      <H1 id="projects">MY PROJECTS</H1>
+
+      <div class="box">
+        <div class="vertical">
+          <img class="image-top" src="../../Myntra/MYNTRA/myntra_logo.png" alt="">
+          <div class="vertical-title">
+           Myntra Clone(HTML, CSS and Javascript)
+          </div>
+          <div class="vertical-desc">
+            A responsive e-commerce website developed using HTML, CSS and Javascript, replicating Myntra's interface and functionality. Features include dynamic product displays, interactive UI elements, and a seamless navigation system, highlighting strong front-end development expertise.
+          </div>
+          
+        </div>
+
+
+
+
+
+        <div class="vertical">
+          <img class="image-top" src="https://codewithcurious.com/wp-content/uploads/2024/08/thumbnail-16-1024x576.png.webp" alt="">
+          <div class="vertical-title">
+           Library Management System (Using C++)
+          </div>
+          <div class="vertical-desc">
+            A console-based application developed in C++ to efficiently manage library operations. The system includes features like adding, deleting, and searching for books, as well as managing user records. It uses file handling to store data persistently and demonstrates my understanding of object-oriented programming, data structures, and C++ concepts.
+          </div>
+          
+        </div>
+
+
+
+        <div class="vertical">
+          <img class="image-top" src="https://i0.wp.com/kbcofficialweb.com/wp-content/uploads/2023/03/unnamed.png?resize=153%2C153&ssl=1" alt="">
+          <div class="vertical-title">
+           KBC Game ( C programming)
+          </div>
+          <div class="vertical-desc">
+            A console-based quiz game built in C, inspired by Kaun Banega Crorepati. It features multiple-choice questions, score tracking, and basic game logic. This project demonstrates my skills in using C programming for interactive applications.            
+          </div>
+          
+        </div>
+        
+        
+        <div class="vertical">
+          <img class="image-top" src="https://cdn-icons-png.flaticon.com/512/2241/2241465.png" alt="">
+          <div class="vertical-title">
+           Tic Tac Toe
+          </div>
+          <div class="vertical-desc">
+            Built a command-line Tic-Tac-Toe game in C where players compete against an AI opponent. Implemented intelligent move selection, win detection, and input validation for a seamless experience. Optimized for efficiency and readability using structured programming principles.
+          </div>          
+        </div>
+
+        <div class="vertical">
+          <img class="image-top" src="https://codewithcurious.com/wp-content/uploads/2024/08/thumbnail-18-1024x576.png.webp"  alt="">
+          <div class="vertical-title">
+           BANK MANAGEMENT SYSTEM
+          </div>
+          <div class="vertical-desc">
+            Developed a console-based Bank Management System in C, featuring account creation, deposits, withdrawals, balance inquiries, and transaction records. Implemented secure data handling, file management for persistent storage, and a user-friendly interface. Designed with structured programming for efficiency and reliability.
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="text-center">
+     Copyrigt &#169; ayushportfolio.com | All rights reserved
+    </div>
+
+
+  </footer>
+  
+
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
