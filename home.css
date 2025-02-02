@@ -1,0 +1,162 @@
+
+
+/* Style for the sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  padding-top: 50px;
+  z-index: 9999;
+}
+
+/* Style for the links inside the sidebar */
+.sidebar .feature {
+  padding: 15px 15px 15px 40px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Animation for feature links */
+.sidebar .feature a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar .feature:hover {
+  background-color: #575757;
+}
+
+/* Open Sidebar animation */
+.sidebar.open {
+  width: 250px;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+      width: 0;
+  }
+  to {
+      width: 250px;
+  }
+}
+
+/* Button to open the sidebar */
+.open-btn {
+  background-color: rgb(7, 7, 58);
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 3px;
+  padding: 0;
+  display: inline;
+  line-height: 0px;
+}
+.home-icon{
+  height: 40px;
+}
+
+.home-icon:hover {
+  height: 41px;
+
+}
+
+/* Button to close the sidebar */
+.close-btn {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Adding a hover effect for features */
+.sidebar .feature:hover {
+  background-color: #444;
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+/* Adding transition delay for each feature */
+.sidebar .feature:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.sidebar .feature:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.sidebar .feature:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.sidebar .feature:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.sidebar .feature {
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Overlay effect */
+.sidebar.open ~ .overlay {
+  display: block;
+  animation: overlayFadeIn 0.5s forwards;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+  animation: overlayFadeOut 0.5s forwards;
+}
+
+@keyframes overlayFadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes overlayFadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
