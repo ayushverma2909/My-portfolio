@@ -34,7 +34,7 @@ function gogithub() {
 document.getElementById('resumebtn').addEventListener('click', function() {
   // Create an invisible link
   const link = document.createElement('a');
-  link.href = 'Ayush verma .pdf';  // Update this path to where your resume is stored
+  link.href = 'Ayushverma.pdf';  // Update this path to where your resume is stored
   link.download = 'Ayush_verma_resume.pdf';  // This is the name that will appear when the file is downloaded
 
   // Append the link to the body (it must be part of the DOM for the download to work)
