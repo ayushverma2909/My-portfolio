@@ -26,7 +26,7 @@ function closeNav() {
 
 // to visit github profile
 function gogithub() {
-    window.location.href = 'index.html';
+    window.location.href = 'https://github.com/ayushverma2909';
   }
 
 
