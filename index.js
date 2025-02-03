@@ -24,6 +24,11 @@ function closeNav() {
   if (overlay) overlay.remove();
 }
 
+// to visit github profile
+function gogithub() {
+    window.location.href = 'index.html';
+  }
+
 
 // JavaScript to trigger the download of resume
 document.getElementById('resumebtn').addEventListener('click', function() {
