@@ -166,6 +166,7 @@ hr{
   margin-top:5px;
   color: #666;
   font-size: 12px;
+  overflow: auto;
 }
 
 
